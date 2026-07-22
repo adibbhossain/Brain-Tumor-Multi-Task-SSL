@@ -1,6 +1,6 @@
 # A Multi-Task Framework for Brain Tumor Classification with Uncertainty Estimation Using Self-Supervised Learning
 
-PyTorch implementation of **"A Multi-Task Framework for Brain Tumor Classification with Uncertainty Estimation Using Self-Supervised Learning"** (Accepted for publication in a Taylor & Francis Book Chapter, 2025).
+PyTorch implementation of **A Multi-Task Framework for Brain Tumor Classification with Uncertainty Estimation Using Self-Supervised Learning** (Accepted for publication in a Taylor & Francis Book Chapter, 2025).
 
 > **Authors:** Md. Adib Hossain, Md. Mehedi Hasan*, Md. Shehabub Mobin Siam, Mohiuddin Showrov, Md. Zahid Hasan.
 
