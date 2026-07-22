@@ -1,0 +1,39 @@
+# Python bytecode / environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# PyTorch Checkpoints & Saved Models
+*.pth
+*.pt
+checkpoints/
+outputs/
+*.log
+
+# Datasets & Local Data
+data/
+raw_data/
+dataset/
+/kaggle/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Brain / AI Agent temporary scratch
+.gemini/
+scratch/

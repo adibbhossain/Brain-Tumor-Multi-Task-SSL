@@ -1,0 +1,43 @@
+# Central Configuration for Multi-Task MRI SSL
+
+seed: 42
+device: "auto"  # "auto", "cuda", "cuda:0", or "cpu"
+
+# Dataset settings
+data_path: "./data/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw Data/Raw"
+raw_prefix: "512"
+img_size: 256
+classes:
+  - Glioma
+  - Meningioma
+  - Normal
+  - Pituitary
+
+# Split proportions
+test_size: 0.15
+val_size_of_train_val: 0.17647  # (0.15 / 0.85)
+
+# DataLoader parameters
+batch_size: 128
+num_workers: 2
+pin_memory: true
+
+# Phase 2: SimCLR Self-Supervised Pre-training
+ssl_epochs: 200
+ssl_lr: 0.0003  # 3e-4
+accum_steps: 4
+temperature: 0.1
+projection_hidden_dim: 2048
+projection_output_dim: 128
+encoder_path: "./checkpoints/pretrained_encoder.pth"
+
+# Phase 3: Multi-Task Fine-Tuning
+warmup_epochs: 5
+warmup_lr: 0.001  # 1e-3
+finetune_epochs: 35
+finetune_lr: 0.0001  # 1e-4
+final_model_path: "./checkpoints/final_tumor_classifier.pth"
+
+# Phase 4: Evaluation & Reliability
+calibration_bins: 15
+tta_enabled: true
