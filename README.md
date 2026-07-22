@@ -1,10 +1,14 @@
-# Multi-Task Self-Supervised Learning for Brain MRI Classification and Uncertainty Estimation
+# Multi-Task Tumor Classification with Uncertainty Estimation via Self-Supervised Pretraining
 
-PyTorch implementation of Self-Supervised Learning (SimCLR) and Multi-Task Fine-Tuning for Brain Tumor Classification and Uncertainty Estimation on MRI scans.
+PyTorch implementation of **"Multi-Task Tumor Classification with Uncertainty Estimation via Self-Supervised Pretraining"** (Accepted for publication in a Taylor & Francis Book Chapter, 2025).
+
+> **Authors:** Md. Adib Hossain, Md. Mehedi Hasan, Md. Shehabub Mobin Siam, Mohiuddin Showrov, Md. Zahid Hasan.
+
+---
 
 ## Overview
 
-This repository contains the implementation of the methodology described in our paper. The framework consists of:
+This repository contains the official implementation of our proposed deep learning framework for brain MRI scan analysis. The workflow consists of:
 1. **Self-Supervised Pretraining (SimCLR)**: Pretraining a ResNet-18 backbone using NT-Xent contrastive loss on MRI images.
 2. **Multi-Task Fine-Tuning**: Jointly training a 4-class classification head (Glioma, Meningioma, Pituitary, Normal) and a confidence/uncertainty estimation head.
 3. **Model Calibration & Evaluation**: Post-hoc Temperature Scaling, Expected Calibration Error (ECE) measurement, and Test-Time Augmentation (TTA).
@@ -39,7 +43,7 @@ This repository contains the implementation of the methodology described in our 
 
 ## Installation
 
-Clone the repository and install the dependencies:
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/adibbhossain/Brain-Tumor-Multi-Task-SSL.git
@@ -104,14 +108,16 @@ python evaluate.py --config configs/default_config.yaml --save-plots
 
 ## Citation
 
-If you find this codebase useful for your research, please cite our paper:
+If you find this codebase or paper useful for your research, please cite:
 
 ```bibtex
-@article{multitask_mri_ssl_2026,
-  title={Multi-Task Self-Supervised Learning and Predictive Uncertainty Estimation for Brain Cancer MRI Classification},
-  author={Author Names},
-  journal={Accepted Publication Venue},
-  year={2026}
+@incollection{hossain2025multitask,
+  title={Multi-Task Tumor Classification with Uncertainty Estimation via Self-Supervised Pretraining},
+  author={Hossain, Md. Adib and Hasan, Md. Mehedi and Siam, Md. Shehabub Mobin and Showrov, Mohiuddin and Hasan, Md. Zahid},
+  booktitle={Taylor \& Francis Book Chapter},
+  year={2025},
+  publisher={Taylor \& Francis},
+  note={Accepted for publication}
 }
 ```
 
