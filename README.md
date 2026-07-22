@@ -42,8 +42,8 @@ This repository contains the implementation of the methodology described in our 
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/your-username/Multi_Task_MRI_SSL.git
-cd Multi_Task_MRI_SSL
+git clone https://github.com/adibbhossain/Brain-Tumor-Multi-Task-SSL.git
+cd Brain-Tumor-Multi-Task-SSL
 pip install -r requirements.txt
 ```
 
