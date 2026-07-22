@@ -1,8 +1,8 @@
-# Multi-Task Tumor Classification with Uncertainty Estimation via Self-Supervised Pretraining
+# A Multi-Task Framework for Brain Tumor Classification with Uncertainty Estimation Using Self-Supervised Learning
 
-PyTorch implementation of **"Multi-Task Tumor Classification with Uncertainty Estimation via Self-Supervised Pretraining"** (Accepted for publication in a Taylor & Francis Book Chapter, 2025).
+PyTorch implementation of **"A Multi-Task Framework for Brain Tumor Classification with Uncertainty Estimation Using Self-Supervised Learning"** (Accepted for publication in a Taylor & Francis Book Chapter, 2025).
 
-> **Authors:** Md. Adib Hossain, Md. Mehedi Hasan, Md. Shehabub Mobin Siam, Mohiuddin Showrov, Md. Zahid Hasan.
+> **Authors:** Md. Adib Hossain, Md. Mehedi Hasan*, Md. Shehabub Mobin Siam, Mohiuddin Showrov, Md. Zahid Hasan.
 
 ---
 
@@ -112,7 +112,7 @@ If you find this codebase or paper useful for your research, please cite:
 
 ```bibtex
 @incollection{hossain2025multitask,
-  title={Multi-Task Tumor Classification with Uncertainty Estimation via Self-Supervised Pretraining},
+  title={A Multi-Task Framework for Brain Tumor Classification with Uncertainty Estimation Using Self-Supervised Learning},
   author={Hossain, Md. Adib and Hasan, Md. Mehedi and Siam, Md. Shehabub Mobin and Showrov, Mohiuddin and Hasan, Md. Zahid},
   booktitle={Taylor \& Francis Book Chapter},
   year={2025},
